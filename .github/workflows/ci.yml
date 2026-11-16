@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        run: dotnet restore Kofschip.slnx
+
+      - name: Build
+        run: dotnet build Kofschip.slnx --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test Kofschip.slnx --configuration Release --no-build
+
+      # The published site, ready to upload to a host.
+      - name: Publish
+        run: dotnet publish src/Kofschip.Web --configuration Release --no-build --output publish
+
+      - name: Upload published site
+        uses: actions/upload-artifact@v4
+        with:
+          name: kofschip-web
+          path: publish
