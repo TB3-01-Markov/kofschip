@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Kofschip.Core/Kofschip.Core.csproj" />
+    <Project Path="src/Kofschip.Data/Kofschip.Data.csproj" />
+    <Project Path="src/Kofschip.Web/Kofschip.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Kofschip.Tests/Kofschip.Tests.csproj" />
+  </Folder>
+</Solution>
