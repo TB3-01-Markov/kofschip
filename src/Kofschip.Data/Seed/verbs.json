@@ -1,0 +1,811 @@
+[
+  {
+    "infinitive": "werken",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Mijn vader ___ in een fabriek."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Gisteren ___ ik de hele dag."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb vorige week veel ___."}
+    ]
+  },
+  {
+    "infinitive": "wonen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ al drie jaar in Gent."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Vroeger ___ wij in een klein dorp."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft lang in Brussel ___."}
+    ]
+  },
+  {
+    "infinitive": "maken",
+    "sentences": [
+      {"tense": "Presens", "person": "Jij", "inversion": true, "text": "___ jij vanavond het eten?"},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Oma ___ elke zondag soep."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb mijn huiswerk al ___."}
+    ]
+  },
+  {
+    "infinitive": "leren",
+    "sentences": [
+      {"tense": "Presens", "person": "Wij", "text": "Wij ___ Nederlands op school."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Als kind ___ ik zwemmen in de zee."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft snel Nederlands ___."}
+    ]
+  },
+  {
+    "infinitive": "spelen",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "De kinderen ___ in de tuin."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Mijn broer ___ vroeger gitaar."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben gisteren voetbal ___."}
+    ]
+  },
+  {
+    "infinitive": "koken",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Mijn moeder ___ elke dag."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Vorige week ___ ik voor tien mensen."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij vandaag ___?"}
+    ]
+  },
+  {
+    "infinitive": "praten",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ heel snel."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Gisteren ___ wij lang over het werk."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb met de leraar ___."}
+    ]
+  },
+  {
+    "infinitive": "wachten",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ op de bus."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Zij ___ een uur op de trein."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben lang op jou ___."}
+    ]
+  },
+  {
+    "infinitive": "fietsen",
+    "sentences": [
+      {"tense": "Presens", "person": "Jij", "text": "Jij ___ elke dag naar school."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Vroeger ___ ik naar mijn werk."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij is naar de bakker ___."}
+    ]
+  },
+  {
+    "infinitive": "wandelen",
+    "sentences": [
+      {"tense": "Presens", "person": "Wij", "text": "Wij ___ graag in het bos."},
+      {"tense": "Imperfectum", "person": "Zij", "text": "Mijn grootouders ___ elke avond in het park."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb vanmorgen een uur ___."}
+    ]
+  },
+  {
+    "infinitive": "luisteren",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Zij ___ naar de radio."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Gisteren ___ ik naar een podcast."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij goed naar de uitleg ___?"}
+    ]
+  },
+  {
+    "infinitive": "bellen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ mijn moeder elke week."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Gisteravond ___ de dokter mij."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft de politie ___."}
+    ]
+  },
+  {
+    "infinitive": "betalen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ altijd met de kaart."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Vorige maand ___ ik te veel voor de huur."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben de rekening al ___."}
+    ]
+  },
+  {
+    "infinitive": "gebruiken",
+    "sentences": [
+      {"tense": "Presens", "person": "Jullie", "text": "Jullie ___ te veel water."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Vroeger ___ mijn opa nooit een computer."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb jouw fiets even ___."}
+    ]
+  },
+  {
+    "infinitive": "vertellen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De leraar ___ een verhaal."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Mijn oma ___ vaak over vroeger."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij het al aan je ouders ___?"}
+    ]
+  },
+  {
+    "infinitive": "antwoorden",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Zij ___ nooit op mijn berichten."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ meteen op zijn vraag."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft nog niet ___."}
+    ]
+  },
+  {
+    "infinitive": "leven",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "Olifanten ___ heel lang."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Mijn opa ___ in een andere tijd."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft tien jaar in Spanje ___."}
+    ]
+  },
+  {
+    "infinitive": "reizen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ graag met de trein."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Vorige zomer ___ wij door Italië."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft veel ___."}
+    ]
+  },
+  {
+    "infinitive": "verhuizen",
+    "sentences": [
+      {"tense": "Presens", "person": "Wij", "text": "Wij ___ volgende maand naar Antwerpen."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "In 2020 ___ mijn zus naar Leuven."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik ben vorig jaar ___."}
+    ]
+  },
+  {
+    "infinitive": "geloven",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ jou niet."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Niemand ___ zijn verhaal."},
+      {"tense": "Perfectum", "person": "Zij", "text": "De kinderen hebben het sprookje ___."}
+    ]
+  },
+  {
+    "infinitive": "studeren",
+    "stem": "studeer",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Mijn zus ___ in Leuven."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ vier jaar aan de universiteit."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft rechten ___."}
+    ]
+  },
+  {
+    "infinitive": "proberen",
+    "stem": "probeer",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ elke dag Nederlands te spreken."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Wij ___ de deur te openen."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij deze soep al ___?"}
+    ]
+  },
+  {
+    "infinitive": "pakken",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ zijn jas."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ snel mijn tas."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft de verkeerde sleutel ___."}
+    ]
+  },
+  {
+    "infinitive": "zetten",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ de bloemen op tafel."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ zijn fiets tegen de muur."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben koffie ___."}
+    ]
+  },
+  {
+    "infinitive": "stoppen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De bus ___ voor het station."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De trein ___ in elk dorp."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik ben met roken ___."}
+    ]
+  },
+  {
+    "infinitive": "kennen",
+    "sentences": [
+      {"tense": "Presens", "person": "Jij", "inversion": true, "text": "___ jij mijn broer?"},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ hem van school."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben haar goed ___."}
+    ]
+  },
+  {
+    "infinitive": "horen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ muziek bij de buren."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Plotseling ___ wij een hard geluid."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij het nieuws al ___?"}
+    ]
+  },
+  {
+    "infinitive": "voelen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ me vandaag niet goed."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Zij ___ zich gisteren ziek."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb niets ___."}
+    ]
+  },
+  {
+    "infinitive": "halen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Papa ___ de kinderen van school."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ gisteren brood bij de bakker."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft haar rijbewijs ___."}
+    ]
+  },
+  {
+    "infinitive": "hopen",
+    "sentences": [
+      {"tense": "Presens", "person": "Wij", "text": "Wij ___ op mooi weer."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ op een goed resultaat."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft altijd op een beter leven ___."}
+    ]
+  },
+  {
+    "infinitive": "dansen",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "Mijn vrienden ___ elke zaterdag."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Op het feest ___ iedereen."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben de hele nacht ___."}
+    ]
+  },
+  {
+    "infinitive": "huilen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De baby ___ veel."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Het kind ___ de hele nacht."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb bij die film ___."}
+    ]
+  },
+  {
+    "infinitive": "poetsen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ mijn tanden twee keer per dag."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Zij ___ elke vrijdag het huis."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij je schoenen ___?"}
+    ]
+  },
+  {
+    "infinitive": "douchen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ elke ochtend."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ gisteren heel lang."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft net ___."}
+    ]
+  },
+  {
+    "infinitive": "ontmoeten",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ elke dag nieuwe mensen."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ zijn vrouw in Gent."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben de nieuwe buren ___."}
+    ]
+  },
+  {
+    "infinitive": "bedanken",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Zij ___ de dokter."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ hem voor zijn hulp."},
+      {"tense": "Perfectum", "person": "Zij", "text": "De kinderen hebben de juf ___."}
+    ]
+  },
+  {
+    "infinitive": "bestellen",
+    "sentences": [
+      {"tense": "Presens", "person": "Wij", "text": "Wij ___ een pizza."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ gisteren een nieuwe telefoon."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb de tickets online ___."}
+    ]
+  },
+  {
+    "infinitive": "herhalen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De leraar ___ de vraag."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ de woorden elke avond."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft de zin drie keer ___."}
+    ]
+  },
+  {
+    "infinitive": "beloven",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ dat ik op tijd kom."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ me een cadeau."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Je hebt het ___!"}
+    ]
+  },
+  {
+    "infinitive": "gebeuren",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Dat ___ elke dag."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Het ongeluk ___ gisteravond."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Wat is er ___?"}
+    ]
+  },
+  {
+    "infinitive": "trouwen",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "Mijn vrienden ___ in mei."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Mijn oma ___ op haar twintigste."},
+      {"tense": "Perfectum", "person": "Zij", "text": "Zij zijn vorig jaar ___."}
+    ]
+  },
+  {
+    "infinitive": "landen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Het vliegtuig ___ om acht uur."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Wij ___ gisteren in Brussel."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Het vliegtuig is op tijd ___."}
+    ]
+  },
+  {
+    "infinitive": "openen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De winkel ___ om negen uur."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ het raam."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft een bankrekening ___."}
+    ]
+  },
+  {
+    "infinitive": "tekenen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Mijn dochter ___ heel mooi."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Het kind ___ een huis."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb het contract ___."}
+    ]
+  },
+  {
+    "infinitive": "rekenen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ op jou."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Wij ___ op zijn hulp."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De kelner heeft te veel ___."}
+    ]
+  },
+  {
+    "infinitive": "regenen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Het ___ vandaag de hele dag."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Gisteren ___ het heel hard."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Het heeft de hele week ___."}
+    ]
+  },
+  {
+    "infinitive": "oefenen",
+    "sentences": [
+      {"tense": "Presens", "person": "Jullie", "text": "Jullie ___ elke dag."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ gisteren een uur op de piano."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft veel ___ voor het examen."}
+    ]
+  },
+  {
+    "infinitive": "veranderen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Het weer ___ snel."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ zijn wachtwoord."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De stad is erg ___."}
+    ]
+  },
+  {
+    "infinitive": "verbeteren",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De leraar ___ de fouten."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ mijn tekst."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft haar Nederlands ___."}
+    ]
+  },
+  {
+    "infinitive": "herinneren",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ me die dag nog goed."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ zich mijn naam niet."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft mij aan de afspraak ___."}
+    ]
+  },
+  {
+    "infinitive": "feliciteren",
+    "stem": "feliciteer",
+    "sentences": [
+      {"tense": "Presens", "person": "Wij", "text": "Wij ___ je met je verjaardag."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De directeur ___ de winnaar."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb haar al ___."}
+    ]
+  },
+  {
+    "infinitive": "repareren",
+    "stem": "repareer",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De monteur ___ de auto."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ vroeger computers."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft mijn fiets ___."}
+    ]
+  },
+  {
+    "infinitive": "controleren",
+    "stem": "controleer",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De politie ___ de papieren."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De leraar ___ het huiswerk."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij de deur ___?"}
+    ]
+  },
+  {
+    "infinitive": "organiseren",
+    "stem": "organiseer",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "De buren ___ een feest."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Vorig jaar ___ wij een reis naar Parijs."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De school heeft een sportdag ___."}
+    ]
+  },
+  {
+    "infinitive": "parkeren",
+    "stem": "parkeer",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ mijn auto voor het huis."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ op de stoep."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben achter het station ___."}
+    ]
+  },
+  {
+    "infinitive": "reserveren",
+    "stem": "reserveer",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Zij ___ een tafel voor twee."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ een kamer in het hotel."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij al een tafel ___?"}
+    ]
+  },
+  {
+    "infinitive": "kosten",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Dit boek ___ tien euro."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De reis ___ veel geld."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Die auto heeft veel geld ___."}
+    ]
+  },
+  {
+    "infinitive": "missen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ mijn familie."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ de bus."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben de trein ___."}
+    ]
+  },
+  {
+    "infinitive": "kussen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ zijn vrouw."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De moeder ___ haar kind."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft hem op de wang ___."}
+    ]
+  },
+  {
+    "infinitive": "rusten",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Opa ___ na het eten."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Wij ___ even onder een boom."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb goed ___."}
+    ]
+  },
+  {
+    "infinitive": "branden",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Het vuur ___ goed."},
+      {"tense": "Imperfectum", "person": "Zij", "text": "De kaarsen ___ de hele avond."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De lamp heeft de hele nacht ___."}
+    ]
+  },
+  {
+    "infinitive": "melden",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De krant ___ een ongeluk."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ me bij de receptie."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft zich ziek ___."}
+    ]
+  },
+  {
+    "infinitive": "huren",
+    "sentences": [
+      {"tense": "Presens", "person": "Wij", "text": "Wij ___ een appartement in het centrum."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Vorig jaar ___ ik een kamer."},
+      {"tense": "Perfectum", "person": "Zij", "text": "Zij hebben een auto ___."}
+    ]
+  },
+  {
+    "infinitive": "sturen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ je een bericht."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Zij ___ me een kaart."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij de e-mail al ___?"}
+    ]
+  },
+  {
+    "infinitive": "duren",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De les ___ twee uur."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De film ___ te lang."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De reis heeft tien uur ___."}
+    ]
+  },
+  {
+    "infinitive": "delen",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "De kinderen ___ hun snoep."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ een kamer met mijn broer."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft de foto's ___."}
+    ]
+  },
+  {
+    "infinitive": "tellen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Het kind ___ tot tien."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ het geld twee keer."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft de stoelen ___."}
+    ]
+  },
+  {
+    "infinitive": "vullen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ de fles met water."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ zijn glas."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft de emmer met water ___."}
+    ]
+  },
+  {
+    "infinitive": "leggen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ het boek op tafel."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ de sleutels in de la."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft de baby in bed ___."}
+    ]
+  },
+  {
+    "infinitive": "kloppen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Iemand ___ op de deur."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ drie keer."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De buurman heeft op het raam ___."}
+    ]
+  },
+  {
+    "infinitive": "merken",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ geen verschil."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ dat de deur open was."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij iets ___?"}
+    ]
+  },
+  {
+    "infinitive": "schilderen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ de muren wit."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Wij ___ vorige zomer het huis."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft een portret ___."}
+    ]
+  },
+  {
+    "infinitive": "knippen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De kapper ___ mijn haar."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ het papier in twee."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Mama heeft mijn haar ___."}
+    ]
+  },
+  {
+    "infinitive": "rennen",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "De honden ___ door het park."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ naar de bus."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft de hele weg ___."}
+    ]
+  },
+  {
+    "infinitive": "zwaaien",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Zij ___ naar haar vrienden."},
+      {"tense": "Imperfectum", "person": "Zij", "text": "De kinderen ___ naar de trein."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb naar je ___."}
+    ]
+  },
+  {
+    "infinitive": "gooien",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ de bal naar de hond."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ het papier in de vuilnisbak."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Iemand heeft een steen ___."}
+    ]
+  },
+  {
+    "infinitive": "groeien",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "Tomaten ___ goed in de zon."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De boom ___ heel snel."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Je zoon is erg ___."}
+    ]
+  },
+  {
+    "infinitive": "draaien",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De aarde ___ rond de zon."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Het wiel ___ heel snel."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft het stuur naar links ___."}
+    ]
+  },
+  {
+    "infinitive": "durven",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ niet te springen."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ niets te zeggen."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft het niet ___."}
+    ]
+  },
+  {
+    "infinitive": "verven",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Zij ___ haar haar rood."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ de deur groen."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben de keuken ___."}
+    ]
+  },
+  {
+    "infinitive": "wensen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ je veel succes."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ ons een fijne dag."},
+      {"tense": "Perfectum", "person": "Zij", "text": "Zij hebben ons een goede reis ___."}
+    ]
+  },
+  {
+    "infinitive": "passen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Deze broek ___ niet."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De sleutel ___ niet in het slot."},
+      {"tense": "Perfectum", "person": "Ik", "text": "Ik heb drie jassen ___."}
+    ]
+  },
+  {
+    "infinitive": "sporten",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ drie keer per week."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Hij ___ vroeger elke dag."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Heb jij vandaag al ___?"}
+    ]
+  },
+  {
+    "infinitive": "zorgen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Zij ___ voor haar moeder."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ voor het eten."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft goed voor de kat ___."}
+    ]
+  },
+  {
+    "infinitive": "volgen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ een cursus Nederlands."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De hond ___ me naar huis."},
+      {"tense": "Perfectum", "person": "Wij", "text": "We hebben de borden ___."}
+    ]
+  },
+  {
+    "infinitive": "noemen",
+    "sentences": [
+      {"tense": "Presens", "person": "Wij", "text": "Wij ___ onze hond Max."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Zij ___ drie voorbeelden."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De leraar heeft mijn naam ___."}
+    ]
+  },
+  {
+    "infinitive": "bouwen",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "De buren ___ een nieuw huis."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Mijn opa ___ dit huis zelf."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De stad heeft een nieuwe brug ___."}
+    ]
+  },
+  {
+    "infinitive": "duwen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ de kinderwagen."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ tegen de deur."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Iemand heeft mij ___."}
+    ]
+  },
+  {
+    "infinitive": "eindigen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De les ___ om vier uur."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De film ___ heel droevig."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De wedstrijd is ___."}
+    ]
+  },
+  {
+    "infinitive": "eisen",
+    "sentences": [
+      {"tense": "Presens", "person": "Zij", "text": "De arbeiders ___ meer loon."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De klant ___ zijn geld terug."},
+      {"tense": "Perfectum", "person": "Hij", "text": "De vakbond heeft een hoger loon ___."}
+    ]
+  },
+  {
+    "infinitive": "leiden",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Deze weg ___ naar het centrum."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Zij ___ het bedrijf tien jaar."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft de vergadering ___."}
+    ]
+  },
+  {
+    "infinitive": "redden",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De brandweer ___ mensen."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De dokter ___ zijn leven."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Hij heeft de hond ___."}
+    ]
+  },
+  {
+    "infinitive": "sparen",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ voor een nieuwe fiets."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Wij ___ jaren voor dit huis."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft veel geld ___."}
+    ]
+  },
+  {
+    "infinitive": "ontdekken",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Het kind ___ de wereld."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ een leuk café."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Wie heeft Amerika ___?"}
+    ]
+  },
+  {
+    "infinitive": "verdienen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Hij ___ goed bij dat bedrijf."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ vroeger weinig."},
+      {"tense": "Perfectum", "person": "Jij", "text": "Je hebt een pauze ___."}
+    ]
+  },
+  {
+    "infinitive": "bedoelen",
+    "sentences": [
+      {"tense": "Presens", "person": "Jij", "inversion": true, "text": "Wat ___ jij precies?"},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Ik ___ het niet slecht."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zij heeft het goed ___."}
+    ]
+  },
+  {
+    "infinitive": "betekenen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Wat ___ dit woord?"},
+      {"tense": "Imperfectum", "person": "Hij", "text": "Dat ___ veel voor mij."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Zijn hulp heeft veel voor ons ___."}
+    ]
+  },
+  {
+    "infinitive": "verwachten",
+    "sentences": [
+      {"tense": "Presens", "person": "Ik", "text": "Ik ___ een pakje."},
+      {"tense": "Imperfectum", "person": "Wij", "text": "Wij ___ meer bezoekers."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Niemand heeft dat ___."}
+    ]
+  },
+  {
+    "infinitive": "verzamelen",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "Mijn broer ___ postzegels."},
+      {"tense": "Imperfectum", "person": "Ik", "text": "Als kind ___ ik stenen."},
+      {"tense": "Perfectum", "person": "Zij", "text": "De leerlingen hebben geld ___ voor het goede doel."}
+    ]
+  },
+  {
+    "infinitive": "informeren",
+    "stem": "informeer",
+    "sentences": [
+      {"tense": "Presens", "person": "Hij", "text": "De school ___ de ouders."},
+      {"tense": "Imperfectum", "person": "Hij", "text": "De dokter ___ ons over de risico's."},
+      {"tense": "Perfectum", "person": "Hij", "text": "Niemand heeft mij ___."}
+    ]
+  }
+]
