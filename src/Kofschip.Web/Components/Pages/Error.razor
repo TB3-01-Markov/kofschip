@@ -1,0 +1,26 @@
+﻿@page "/Error"
+@using System.Diagnostics
+
+<PageTitle>Fout – Kofschip</PageTitle>
+
+<section class="card">
+    <h1>Er is iets misgegaan</h1>
+    <p>Probeer het opnieuw. Blijft het probleem? Laad dan de pagina opnieuw.</p>
+
+    @if (!string.IsNullOrEmpty(RequestId))
+    {
+        <p class="muted">Request-ID: <code>@RequestId</code></p>
+    }
+
+    <a class="button primary" href="/">Naar de startpagina</a>
+</section>
+
+@code {
+    [CascadingParameter]
+    private HttpContext? HttpContext { get; set; }
+
+    private string? RequestId { get; set; }
+
+    protected override void OnInitialized() =>
+        RequestId = Activity.Current?.Id ?? HttpContext?.TraceIdentifier;
+}

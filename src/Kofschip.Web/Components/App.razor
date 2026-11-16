@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Oefen Nederlandse werkwoorden: presens, imperfectum en perfectum, met uitleg bij elk antwoord." />
+    <title>Kofschip – werkwoordtrainer</title>
+    <base href="/" />
+    <ResourcePreloader />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="@Assets["app.css"]" />
+    <link rel="stylesheet" href="@Assets["Kofschip.Web.styles.css"]" />
+    <ImportMap />
+    <HeadOutlet @rendermode="InteractiveWithoutPrerender" />
+</head>
+
+<body>
+    <Routes @rendermode="InteractiveWithoutPrerender" />
+    <ReconnectModal />
+    <script src="@Assets["_framework/blazor.web.js"]"></script>
+</body>
+
+</html>
+
+@code {
+    // Prerendering is off: pages read settings and progress from the browser,
+    // and a training must not be drawn twice with different random sentences.
+    private static readonly IComponentRenderMode InteractiveWithoutPrerender =
+        new InteractiveServerRenderMode(prerender: false);
+}

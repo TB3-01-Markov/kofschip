@@ -1,0 +1,273 @@
+﻿@page "/oefenen"
+@inject TrainingSessionFactory Sessions
+@inject ProgressStore ProgressStore
+
+<PageTitle>Oefenen – Kofschip</PageTitle>
+
+@if (_loading)
+{
+    <p class="muted" role="status">Laden…</p>
+}
+else if (_session is null)
+{
+    <section class="card">
+        <h1>Geen zinnen gevonden</h1>
+        <p>Kies eerst minstens één tijd.</p>
+        <a class="button primary" href="/">Naar de instellingen</a>
+    </section>
+}
+else if (_session.IsFinished)
+{
+    <section class="card result">
+        <h1>Resultaat</h1>
+        <p class="score">
+            <span class="score-number">@_session.CorrectCount / @_session.Total</span>
+            <span class="score-percent">@_session.Percentage% goed</span>
+        </p>
+
+        @if (_session.Mistakes.Count == 0)
+        {
+            <p class="praise">Alles goed. Knap gedaan!</p>
+        }
+        else
+        {
+            <h2>Je fouten</h2>
+            <ul class="mistakes">
+                @foreach (var mistake in _session.Mistakes)
+                {
+                    <li>
+                        <p class="sentence small">
+                            @(mistake.Exercise.TextBefore)<strong class="right">@mistake.Exercise.Answer</strong>@(mistake.Exercise.TextAfter)
+                            <span class="infinitive">(@mistake.Exercise.Infinitive)</span>
+                        </p>
+                        <p class="given">
+                            Jouw antwoord:
+                            @if (mistake.Given.Length == 0)
+                            {
+                                <em>niets ingevuld</em>
+                            }
+                            else
+                            {
+                                <span class="wrong">@mistake.Given</span>
+                            }
+                        </p>
+                    </li>
+                }
+            </ul>
+        }
+
+        <div class="actions">
+            <button type="button" class="button primary" @onclick="StartNewAsync">Opnieuw</button>
+            @if (_session.Mistakes.Count > 0)
+            {
+                <button type="button" class="button" @onclick="RetryMistakes">Alleen fouten</button>
+            }
+            <a class="link" href="/">Andere instellingen</a>
+        </div>
+    </section>
+}
+else
+{
+    var exercise = _session.Current;
+    var result = _session.CurrentResult;
+
+    <section class="card exercise">
+        <div class="exercise-head">
+            <span class="badge">@TenseText.Name(exercise.Tense)</span>
+            <span class="counter" aria-label="Zin @_session.Position van @_session.Total">
+                @_session.Position / @_session.Total
+            </span>
+        </div>
+        <div class="progress-bar" aria-hidden="true">
+            <div class="progress-fill" style="width: @(ProgressPercent)%"></div>
+        </div>
+
+        <h1 class="visually-hidden">Vul de juiste vorm in</h1>
+
+        <form @onsubmit="SubmitAsync" autocomplete="off">
+            <p class="sentence">
+                @exercise.TextBefore
+                @if (result is null)
+                {
+                    <input @ref="_input" @bind="_answer" @bind:event="oninput"
+                           class="blank" type="text" inputmode="text"
+                           aria-label="Vorm van @exercise.Infinitive"
+                           autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" />
+                }
+                else if (result.IsCorrect)
+                {
+                    <strong class="right">@exercise.Answer</strong>
+                }
+                else
+                {
+                    @if (result.Given.Length > 0)
+                    {
+                        <del class="wrong">@result.Given</del>@(" ")
+                    }
+                    <strong class="right">@exercise.Answer</strong>
+                }
+                @exercise.TextAfter
+                <span class="infinitive">(@exercise.Infinitive)</span>
+            </p>
+
+            @if (result is null)
+            {
+                <div class="actions">
+                    @* Never disabled: with a slow connection Enter would be lost while the button catches up. *@
+                    <button type="submit" class="button primary">Controleer</button>
+                    <a class="link" href="/">Stoppen</a>
+                </div>
+                @if (_askForAnswer && string.IsNullOrWhiteSpace(_answer))
+                {
+                    <p class="hint" role="alert">Typ eerst je antwoord.</p>
+                }
+            }
+        </form>
+
+        @if (result is not null)
+        {
+            <p class="feedback @(result.IsCorrect ? "is-right" : "is-wrong")" role="status">
+                @if (result.IsCorrect)
+                {
+                    <text>Goed!</text>
+                }
+                else
+                {
+                    <text>Niet goed. Het juiste antwoord is <strong>@exercise.Answer</strong>.</text>
+                }
+            </p>
+
+            @if (_showExplanation)
+            {
+                <Explanation Form="exercise.Form" />
+            }
+
+            <div class="actions">
+                <button type="button" class="button primary" @ref="_nextButton" @onclick="Next">
+                    @(_session.Position == _session.Total ? "Bekijk resultaat" : "Volgende")
+                </button>
+                @if (!_showExplanation)
+                {
+                    <button type="button" class="link" @onclick="() => _showExplanation = true">Toon uitleg</button>
+                }
+            </div>
+        }
+    </section>
+}
+
+@code {
+    private TrainingSettings _settings = TrainingSettings.Default;
+    private TrainingSession? _session;
+    private bool _loading = true;
+    private string _answer = string.Empty;
+    private bool _showExplanation;
+    private bool _askForAnswer;
+
+    private ElementReference _input;
+    private ElementReference _nextButton;
+    private bool _focusInput;
+    private bool _focusNext;
+
+    [SupplyParameterFromQuery(Name = "tijden")]
+    private string? Tijden { get; set; }
+
+    [SupplyParameterFromQuery(Name = "aantal")]
+    private string? Aantal { get; set; }
+
+    private int ProgressPercent => _session is null
+        ? 0
+        : 100 * (_session.Position - (_session.IsAnswered ? 0 : 1)) / _session.Total;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _settings = TrainingSettings.Parse(Tijden, int.TryParse(Aantal, out var length) ? length : null);
+        await StartNewAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // Keyboard flow: type, Enter to check, Enter again for the next sentence.
+        if (_focusInput)
+        {
+            _focusInput = false;
+            await FocusAsync(_input);
+        }
+        else if (_focusNext)
+        {
+            _focusNext = false;
+            await FocusAsync(_nextButton);
+        }
+    }
+
+    private async Task StartNewAsync()
+    {
+        _session = await Sessions.CreateAsync(_settings);
+        _loading = false;
+        PrepareInput();
+    }
+
+    private async Task SubmitAsync()
+    {
+        if (_session is null || _session.IsFinished || _session.IsAnswered)
+        {
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(_answer))
+        {
+            _askForAnswer = true;
+            _focusInput = true;
+            return;
+        }
+
+        var result = _session.Submit(_answer);
+        _showExplanation = !result.IsCorrect;
+        _focusNext = true;
+        await ProgressStore.RecordAsync(result.Exercise.Tense, result.IsCorrect);
+    }
+
+    private void Next()
+    {
+        if (_session is null || !_session.IsAnswered)
+        {
+            return;
+        }
+
+        _session.Next();
+        if (!_session.IsFinished)
+        {
+            PrepareInput();
+        }
+    }
+
+    private void RetryMistakes()
+    {
+        if (_session is null || _session.Mistakes.Count == 0)
+        {
+            return;
+        }
+
+        _session = _session.CreateRetryOfMistakes();
+        PrepareInput();
+    }
+
+    private void PrepareInput()
+    {
+        _answer = string.Empty;
+        _showExplanation = false;
+        _askForAnswer = false;
+        _focusInput = _session is { IsFinished: false };
+    }
+
+    private static async Task FocusAsync(ElementReference element)
+    {
+        try
+        {
+            await element.FocusAsync();
+        }
+        catch (Exception ex) when (ex is JSException or InvalidOperationException or OperationCanceledException)
+        {
+            // The element is gone or the connection dropped: focus is only a convenience.
+        }
+    }
+}

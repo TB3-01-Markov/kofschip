@@ -1,0 +1,143 @@
+﻿@page "/"
+@inject SettingsStore SettingsStore
+@inject ProgressStore ProgressStore
+@inject NavigationManager Navigation
+
+<PageTitle>Kofschip – werkwoordtrainer</PageTitle>
+
+<section class="intro">
+    <h1>Oefen je werkwoorden</h1>
+    <p>Vul de juiste vorm in. Na elk antwoord zie je welke regel erachter zit.</p>
+</section>
+
+@if (_progress is null)
+{
+    <p class="muted" role="status">Laden…</p>
+}
+else
+{
+    <form class="card" @onsubmit="StartAsync">
+        <fieldset>
+            <legend>Welke tijden wil je oefenen?</legend>
+            <div class="choices">
+                @foreach (var tense in Enum.GetValues<Tense>())
+                {
+                    var stats = _progress.For(tense);
+                    <label class="choice @(_tenses.Contains(tense) ? "is-on" : null)">
+                        <input type="checkbox"
+                               checked="@_tenses.Contains(tense)"
+                               @onchange="e => Toggle(tense, e.Value is true)" />
+                        <span class="choice-body">
+                            <span class="choice-title">@TenseText.Name(tense)</span>
+                            <span class="choice-example">@TenseText.Example(tense)</span>
+                            <span class="choice-progress">
+                                @if (stats.Percentage is int percentage)
+                                {
+                                    <text>@percentage% goed · @stats.Attempts @(stats.Attempts == 1 ? "antwoord" : "antwoorden")</text>
+                                }
+                                else
+                                {
+                                    <text>nog niet geoefend</text>
+                                }
+                            </span>
+                        </span>
+                    </label>
+                }
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hoeveel zinnen?</legend>
+            <div class="lengths">
+                @foreach (var length in TrainingSettings.AllowedLengths)
+                {
+                    <label class="length @(_length == length ? "is-on" : null)">
+                        <input type="radio" name="length"
+                               checked="@(_length == length)"
+                               @onchange="() => _length = length" />
+                        <span>@length</span>
+                    </label>
+                }
+            </div>
+        </fieldset>
+
+        <div class="actions">
+            <button type="submit" class="button primary" disabled="@(!CanStart)">Start</button>
+            @if (!CanStart)
+            {
+                <p class="hint" role="alert">Kies minstens één tijd.</p>
+            }
+        </div>
+    </form>
+
+    @if (!_progress.IsEmpty)
+    {
+        <section class="reset">
+            @if (_confirmReset)
+            {
+                <span>Je voortgang wissen?</span>
+                <button type="button" class="button danger small" @onclick="ResetAsync">Ja, wissen</button>
+                <button type="button" class="button small" @onclick="() => _confirmReset = false">Annuleren</button>
+            }
+            else
+            {
+                <button type="button" class="link" @onclick="() => _confirmReset = true">Voortgang wissen</button>
+            }
+        </section>
+    }
+}
+
+@code {
+    private readonly HashSet<Tense> _tenses = [];
+    private int _length = TrainingSettings.DefaultLength;
+    private Progress? _progress;
+    private bool _confirmReset;
+
+    private bool CanStart => _tenses.Count > 0;
+
+    // Browser storage is only reachable after the first render.
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender)
+        {
+            return;
+        }
+
+        var settings = await SettingsStore.LoadAsync();
+        _tenses.UnionWith(settings.Tenses);
+        _length = settings.Length;
+        _progress = await ProgressStore.LoadAsync();
+        StateHasChanged();
+    }
+
+    private void Toggle(Tense tense, bool on)
+    {
+        if (on)
+        {
+            _tenses.Add(tense);
+        }
+        else
+        {
+            _tenses.Remove(tense);
+        }
+    }
+
+    private async Task StartAsync()
+    {
+        if (!CanStart)
+        {
+            return;
+        }
+
+        var settings = new TrainingSettings(_tenses, _length);
+        await SettingsStore.SaveAsync(settings);
+        Navigation.NavigateTo($"/oefenen?{settings.ToQueryString()}");
+    }
+
+    private async Task ResetAsync()
+    {
+        await ProgressStore.ResetAsync();
+        _progress = await ProgressStore.LoadAsync();
+        _confirmReset = false;
+    }
+}

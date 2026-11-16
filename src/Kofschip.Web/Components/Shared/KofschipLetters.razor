@@ -1,0 +1,28 @@
+﻿@* Shows the mnemonic with the checked letter marked, or says that the letter is not in it. *@
+<p class="kofschip" aria-label="@Label">
+    <span class="kofschip-word" aria-hidden="true">
+        @foreach (var c in Word)
+        {
+            var isConsonant = ConjugationEngine.IsInKofschip(c);
+            var isHit = InWord && char.ToLowerInvariant(c) == Letter;
+            <span class="@(isHit ? "hit" : isConsonant ? "consonant" : "filler")">@c</span>
+        }
+    </span>
+    <span class="kofschip-verdict @(InWord ? "in" : "out")" aria-hidden="true">
+        @(InWord ? $"{Letter} zit erin" : $"{Letter} zit er niet in")
+    </span>
+</p>
+
+@code {
+    [Parameter, EditorRequired]
+    public char Letter { get; set; }
+
+    private bool InWord => ConjugationEngine.IsInKofschip(Letter);
+
+    // x is only part of the longer variant of the mnemonic.
+    private string Word => Letter == 'x' ? "'t ex-kofschip" : "'t kofschip";
+
+    private string Label => InWord
+        ? $"De {Letter} zit in {Word}."
+        : $"De {Letter} zit niet in {Word}.";
+}

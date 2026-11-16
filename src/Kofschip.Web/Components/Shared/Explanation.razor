@@ -1,0 +1,22 @@
+﻿<div class="explanation">
+    <h2>Uitleg</h2>
+    <ol>
+        @foreach (var step in Form.Steps)
+        {
+            <li>@NoBreakAtHyphen(step.Text)</li>
+        }
+    </ol>
+    @if (Form.KofschipLetter is char letter)
+    {
+        <KofschipLetters Letter="letter" />
+    }
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public ConjugatedForm Form { get; set; } = null!;
+
+    // Endings such as "-te" and "ge-" must not be split over two lines:
+    // show them with a non-breaking hyphen (U+2011).
+    private static string NoBreakAtHyphen(string text) => text.Replace('-', '\u2011');
+}
